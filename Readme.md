@@ -11,3 +11,4 @@
    - Working with View Controllers
 ### Chapter 3 - Working with Data:
    - Reading & Writing with JDBC
+   - Persisting data with Spring Data JPA
