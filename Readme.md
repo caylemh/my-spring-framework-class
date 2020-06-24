@@ -9,3 +9,5 @@
    - Processing From Submission
    - Validating form input
    - Working with View Controllers
+### Chapter 3 - Working with Data:
+   - Reading & Writing with JDBC
