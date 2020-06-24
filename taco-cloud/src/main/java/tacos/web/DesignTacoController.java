@@ -1,14 +1,12 @@
 package tacos.web;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
@@ -67,7 +65,7 @@ public class DesignTacoController {
   public String showDesignForm(Model model) {
     List<Ingredient> ingredients = new ArrayList<>();
     ingredientRepo.findAll().forEach(i -> ingredients.add(i));
-    // model.addAttribute("design", new Taco());
+    model.addAttribute("design", new Taco());
     // return "design";
 
     Type[] types = Ingredient.Type.values();
